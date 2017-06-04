@@ -8,15 +8,16 @@ This document will walk you though all the automated commands in the scripts.
 
 SCRIPTS TO AUTOMATE USER COMMANDS (ADD USER, REMOVE USER, UNLOCK USER,
 CHANGE USER PASSWORD, SYNC USER)
-• Login to LDAP Server
-• sudo su
-• cd /root/ldap
-⁃ you will find the following scripts:
-⁃ 01_add_new_user.sh
-⁃ 02_remove_user.sh
-⁃ 03_unlock_user.sh
-⁃ 04_sync_users.sh
-⁃ 05_change_user_password
+Login to LDAP Server
+sudo su
+cd /root/ldap
+
+you will find the following scripts:
+01_add_new_user.sh
+02_remove_user.sh
+03_unlock_user.sh
+04_sync_users.sh
+05_change_user_password
 
 ## Add New User
 ./01_add_new_user.sh
