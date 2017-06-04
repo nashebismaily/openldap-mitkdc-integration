@@ -45,11 +45,7 @@ Re-Enter the Password:
 Enter Root LDAP Password: `<PASSWORD>`  
 Re-Enter the Root LDAP Password: `<PASSWORD>`  
 
-# Hortonworks HDP Access
-Once users have been created, you must give them access permissions   
-(See Below):  
-
-#Ranger Create User Access Policies
+# Ranger Create User Access Policies
 login to ranger as admin
   
 Change New User Role to: admin  
@@ -58,13 +54,13 @@ https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.5.0/bk_security/content/edi
 Crate Policies for user  
 https://docs.hortonworks.com/HDPDocuments/HDP2/HDP-2.5.0/bk_security/content/ranger_resource_based_policy_manager.html  
 
-#Ambari Manage Users and Groups
+# Ambari Manage Users and Groups
 login to ambari as admin  
 
 Give New User Permissions  
 https://docs.hortonworks.com/HDPDocuments/Ambari-2.4.1.0/bk_ambariadministration/content/managing_users_and_groups.html  
 
-#Nifi Create User Access Policies 
+# Nifi Create User Access Policies 
 
 login to nifi as admin
 
