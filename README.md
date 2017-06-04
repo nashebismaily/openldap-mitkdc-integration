@@ -66,4 +66,7 @@ login to nifi as admin
 
 Give New User Permissions
 
-https://docs.hortonworks.com/HDPDocuments/HDF2/HDF-2.0.0/bk_administration/content/config-users-access-policies.html  
+https://docs.hortonworks.com/HDPDocuments/HDF2/HDF-2.0.0/bk_administration/content/config-users-access-policies.html 
+
+# Author
+Nasheb Ismaily  
