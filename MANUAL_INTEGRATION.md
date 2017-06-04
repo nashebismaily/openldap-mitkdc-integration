@@ -1,8 +1,8 @@
-## Manually Adding Users to OpenLdap, MIT KDC, and HDP
+# Manually Adding Users to OpenLdap, MIT KDC, and HDP
  
 Note: In this example, we will be adding the user: test_user  
 
-# Add User to LDAP & MIT KDC. Create User Keytab
+## Add User to LDAP & MIT KDC. Create User Keytab
 
 Create and Add the Users:  
 
@@ -89,10 +89,8 @@ curl -k -u admin:admin -i -H 'X-Requested-By: ambari' -X PUT -d'{"RequestInfo": 
 Start Ranger:
 curl -k -u admin:admin -i -H 'X-Requested-By: ambari' -X PUT -d '{"RequestInfo":{"context" :"Start RANGER_USERSYNC via REST"}, "Body": {"ServiceInfo": {"state":"STARTED"}}}' https://<ambari_host>:<ambari_port>/api/v1/clusters/<CLUSTER_NAME>/services/RANGER  
 
-# Delete User From OpenLDAP, MIT KDC, and HDP
+## Delete User From OpenLDAP, MIT KDC, and HDP
 Note: In this example, we will be removing the user: test_user  
-Login to LDAP Server  
-sudo su  
 
 Delete User: 
 
@@ -122,7 +120,7 @@ q
 Remove User Keytab:  
 rm -f /etc/security/keytabs/test_user.keytab  
 
-# Unlock Account From OpenLDAP and MIT KDC
+## Unlock Account From OpenLDAP and MIT KDC
 
 Note: In this example, we will be unlocking the user: test_user  
 
@@ -135,5 +133,5 @@ password: `<PASSWORD>`
 Unlocal MIT KDC Account:  
 faillock --user admin --reset  
 
-# Author
+## Author
 Nasheb Ismaily
