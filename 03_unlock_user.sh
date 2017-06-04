@@ -2,6 +2,10 @@
 # This scripts will:
 # 1. Unlock a user from LDAP
 # 2. Unlock a user from MIT KDC
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
 ###
 
 

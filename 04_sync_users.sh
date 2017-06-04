@@ -2,6 +2,10 @@
 ###
 # This scripts will:
 # 1. Sync all users to Ambari and Ranger from LDAP
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
 ###
 
 ## User Defined Variables ##

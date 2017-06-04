@@ -4,6 +4,10 @@
 # 1. Add a user to OpenLDAP
 # 2. Add a kereberos principle to the MIT KDC
 # 3. Create the hdfs user directories and set permissions
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
 ###
 
 ## User Defined Variables ##

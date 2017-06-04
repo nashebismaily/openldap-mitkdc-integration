@@ -1,3 +1,9 @@
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
+
+
 #!/usr/bin/expect
 
 set user_name [lindex $argv 0]

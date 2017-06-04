@@ -2,6 +2,10 @@
 ###
 # This scripts will:
 # 1. Change a User's Password
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
 ###
 
 ## User Defined Variables ##

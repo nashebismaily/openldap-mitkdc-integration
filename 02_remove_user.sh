@@ -3,6 +3,10 @@
 # 1. Remove a user from LDAP
 # 2. Remove a user from MIT KDC
 # 3. Delete the user home directory in HDFS
+#
+# Author: Nasheb Ismaily
+#
+# All rights reserved - Do Not Redistribute
 ###
 
 
