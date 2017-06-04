@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+
+set user_name [lindex $argv 0]
+set user_password [lindex $argv 1]
+set kdc_password [lindex $argv 2]
+
+spawn "kadmin"
+expect "Authenticating as principal root/admin@<DOMAIN> with password."
+expect "Password for root/admin@<DOMAIN>"
+send "$kdc_password\r"
+expect "kadmin:"
+send "addprinc -policy <POLICY> $user_name\r"
+expect "Enter password for principal \"$user_name@<DOMAIN>\":"
+send "$user_password\r"
+expect "Re-enter password for principal \"$user_name@<DOMAIN>\":"
+send "$user_password\r"
+expect "Principal \"$user_name@<DOMAIN>\" created."
+expect "kadmin:"
+send "quit\r"
+interact

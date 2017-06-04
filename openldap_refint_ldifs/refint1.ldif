@@ -1,0 +1,6 @@
+dn: cn=module{1},cn=config
+objectClass: olcModuleList
+cn: module{1}
+objectclass: top
+olcmodulepath: /usr/lib64/openldap/
+olcmoduleload: refint

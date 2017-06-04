@@ -1,0 +1,5 @@
+dn: cn=ldapadmin,dc=<DOAMAIN>,dc=<DOAMAIN>,dc=<DOAMAIN>
+cn: postfix
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+userPassword: {SSHA}...

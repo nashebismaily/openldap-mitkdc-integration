@@ -1,0 +1,13 @@
+dn: dc=<DOMAIN>,dc=<DOMAIN>,dc=<DOMAIN>
+objectClass: dcObject
+objectClass: organization
+dc: <dc>
+o : <o>
+
+dn: ou=People,dc=<DOMAIN>,dc=ar<DOMAIN>my,dc=<DOMAIN>
+objectClass: organizationalUnit
+ou: People
+
+dn: ou=Group,dc=<DOMAIN>,dc=<DOMAIN>,dc=<DOMAIN>
+objectClass: organizationalUnit
+ou: Group

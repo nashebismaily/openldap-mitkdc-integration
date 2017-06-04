@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+spawn "kadmin"
+expect "Authenticating as principal root/admin@<MIT DOMIAN> with password."
+expect "Password for root/admin@<MIT DOMIAN>:"
+send "<PASSWORD>\r"
+expect "kadmin:"
+send "listprics\r"
+expect "*"
+expect "kadmin:"
+interact

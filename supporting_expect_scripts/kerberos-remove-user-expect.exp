@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+set user_name [lindex $argv 0]
+set kdc_password [lindex $argv 1]
+
+spawn "kadmin"
+expect "Authenticating as principal root/admin@<DOMAIN> with password."
+expect "Password for root/admin@<DOMAIN>:"
+send "$kdc_password\r"
+expect "kadmin:"
+send "delprinc $user_name\r"
+expect "Are you sure you want to delete the principal \"$user_name@<DOMAIN>\"? (yes/no):"
+send "yes\r"
+expect "Principal \"$user_name@<DOMAIN>\" deleted."
+expect "Make sure that you have removed this principal from all ACLs before reusing."
+expect "kadmin:"
+send "quit\r"
+interact

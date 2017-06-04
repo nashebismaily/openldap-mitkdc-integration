@@ -1,0 +1,20 @@
+dn: cn=hadoop,ou=Group,dc=<domain>,dc=<domain>,dc=<domain>
+changetype: modify
+add: memberuid
+memberuid: <user>
+
+dn: cn=sftp,ou=Group,dc=<domain>,dc=<domain>,dc=<domain>
+changetype: modify
+add: memberuid
+memberuid:  <user>
+
+dn: cn=wheel,ou=Group,dc=<domain>,dc=<domain>,dc=<domain>
+changetype: modify
+add: memberuid
+memberuid:  <user>
+
+dn: cn=sshusers,ou=Group,dc=<domain>,dc=<domain>,dc=<domain>
+changetype: modify
+add: memberuid
+memberuid:  <user>
+

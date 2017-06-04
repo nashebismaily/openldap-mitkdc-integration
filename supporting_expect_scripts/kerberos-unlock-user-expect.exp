@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+
+set user_name [lindex $argv 0]
+set kdc_password [lindex $argv 1]
+
+spawn "kadmin"
+expect "Authenticating as principal root/admin@<DOMAIN> with password."
+expect "Password for root/admin@<DOMAIN>:"
+send "$kdc_password\r"
+expect "kadmin:"
+send "modprinc -unlock $user_name\r"
+expect "Principal \"$user_name@<DOMAIN>\" modified."
+expect "kadmin:"
+send "quit\r"
+interact

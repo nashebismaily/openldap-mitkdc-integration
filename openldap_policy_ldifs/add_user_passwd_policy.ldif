@@ -1,0 +1,4 @@
+dn: uid=<UID>,ou=People,dc=<DOMAIN>,dc=<DOMAIN>,dc=<DOMAIN>
+changetype: modify
+add: pwdPolicySubentry
+pwdPolicySubentry: cn=passwordDefault,ou=Policies,dc=<DOMAIN>,dc=<DOMAIN>,dc=<DOMAIN>

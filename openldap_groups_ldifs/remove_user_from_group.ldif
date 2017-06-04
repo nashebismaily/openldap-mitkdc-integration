@@ -1,0 +1,9 @@
+dn: cn=sshusers,ou=Group, <user>
+changetype: modify
+delete: memberUid
+memberUid: <user>
+
+dn: cn=wheel,ou=Group, <user>
+changetype: modify
+delete: memberUid
+memberUid: <user>
