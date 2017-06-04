@@ -1,3 +1,5 @@
+OPENLDAP - MIT KDC INTEGRATION + HDP - AMBARI, RANGER, NIFI INTEGRATION
+
 The following scripts integrate Openldap and MITKDC user management.
 The scripts also update Ambari, Ranger, and Nifi (Hortonworks Stack)  with the updated users/groups via ldap sync.
 
