@@ -13,7 +13,7 @@ Login to LDAP Server
 sudo su
 cd /root/ldap
 
-you will find the following scripts:
+You will find the following scripts:
 01_add_new_user.sh
 02_remove_user.sh
 03_unlock_user.sh
